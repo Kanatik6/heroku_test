@@ -1,1 +1,1 @@
-web: gunicorn send_mail.wsgi
+web: python manage.py runserver 0.0.0.0:\$PORT
