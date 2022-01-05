@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 from pathlib import Path
+import django_heroku
 
 import os
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -162,3 +163,6 @@ STATICFILES_DIRS = (
 
 CSRF_TRUSTED_ORIGINS = ['https://*.herokuapp.com/','https://*.127.0.0.1']
 
+
+
+django_heroku.settings(locals())
