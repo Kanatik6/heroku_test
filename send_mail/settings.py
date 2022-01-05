@@ -167,3 +167,9 @@ CSRF_TRUSTED_ORIGINS = ['https://*.herokuapp.com/','https://*.127.0.0.1']
 
 # TODO add whitenoise in middlewares
 
+
+
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "static"),
+    # '/var/www/static/',
+]
