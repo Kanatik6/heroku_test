@@ -34,6 +34,7 @@ ALLOWED_HOSTS = ['send1234.herokuapp.com','127.0.0.1:8000','.herokuapp.com', 'lo
 # Application definition
 
 INSTALLED_APPS = [
+    'django_heroku'
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -169,7 +170,7 @@ CSRF_TRUSTED_ORIGINS = ['https://*.herokuapp.com/','https://*.127.0.0.1']
 
 
 
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "static"),
-    # '/var/www/static/',
-]
+# STATICFILES_DIRS = [
+#     os.path.join(BASE_DIR, "static"),
+#     # '/var/www/static/',
+# ]
