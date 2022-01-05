@@ -160,5 +160,5 @@ STATICFILES_DIRS = (
 
 
 
-CSRF_TRUSTED_ORIGINS = ['https://send1234.herokuapp.com/','https://*.127.0.0.1']
+CSRF_TRUSTED_ORIGINS = ['https://*.herokuapp.com/','https://*.127.0.0.1']
 
