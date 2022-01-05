@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-%(-_vjuc2ewlms@eb@@ewibr&#lp#y19(7gi&q8dll4!4g3bsv
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['send1234.herokuapp.com','127.0.0.1:8000']
+ALLOWED_HOSTS = ['send1234.herokuapp.com','127.0.0.1:8000','.herokuapp.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     
     # 
     'rest_framework',
+    'drf_yasg'
 ]
 
 MIDDLEWARE = [
@@ -164,5 +165,5 @@ STATICFILES_DIRS = (
 
 CSRF_TRUSTED_ORIGINS = ['https://*.herokuapp.com/','https://*.127.0.0.1']
 
-
+# TODO add whitenoise in middlewares
 
