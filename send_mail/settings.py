@@ -158,4 +158,7 @@ STATICFILES_DIRS = (
 )
 
 
-STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
+
+
+CSRF_TRUSTED_ORIGINS = ['https://send1234.herokuapp.com/','https://*.127.0.0.1']
+
