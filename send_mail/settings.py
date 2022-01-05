@@ -153,7 +153,7 @@ CELERY_TASK_TIME_LIMIT = 30 * 60
 CELERY_RESULT_BACKEND = 'redis://redis:6379'
 
 
-STATIC_ROOT = os.path.join(BASE_DIR / 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
